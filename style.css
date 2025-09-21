@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common Responsive Rules */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.hh {
+  gap: 10px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box1, .box2, .first, .sec {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.imm, .op, .oj, .nil {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.nil2 {
+  width: 100%;
+  max-width: 200px;
+  margin: 40px auto;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.footer {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(218, 241, 233);
+  padding: 20px;
+}
+
+.last, .my, .con, .p {
+  text-align: center;
+}
+
+/* Responsive Design with Media Queries */
+
+/* Tablets (<=768px) */
+@media (max-width: 768px) {
+  .hh {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imm, .op, .oj, .nil {
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
+
+/* Mobile (<=480px) */
+@media (max-width: 480px) {
+  .logo {
+    width: 80px;
+  }
+
+  .hh {
+    font-size: 0.9rem;
+  }
+
+  .imm, .op, .oj, .nil {
+    max-width: 100%;
+  }
+
+  .form {
+    width: 95%;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
